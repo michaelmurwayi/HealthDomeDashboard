@@ -20,39 +20,55 @@
   .a{
     background-color: black;
   }
-  #intro{
-    width: 100%;
-    height: 350px;
-    background-image: url("img/med2.jpg");
+  .intro{
+    
+    height: 600px;
+    background-image: url("img/med.jpeg");
     background-size: cover;
+    text-align: center;
+    position: relative;
+    right: 0;
   }
-
-  #card-img-top{
-    height: 50%;
+  .logo{
+    padding: 200px;
+    color: blanchedalmond;
   }
+.about{
+  margin: 50px;
+}
+  .components{
+    margin: 100px;
+  }
+  .rgba-gradient {
+  background: -moz-linear-gradient(45deg,black,white 100%);
+  background: -webkit-linear-gradient(45deg,black,white 100%);
+  background: linear-gradient(to 45deg,black,white 100%);
+}
 
 </style>
 <body>
 
   <!-- Start your project here-->  
 
-  <!-- Navbar -->
-<div class="header">
-    <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="">
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#"><b>HealthDome</b></a>
-  
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+  <!-- Navbar -->
+  <div class="header">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><b>HealthDome</b></a>
+      
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
       aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+    
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-  
+    <div class="collapse navbar-collapse">
+      
       <!-- Links -->
       <ul class="navbar-nav mr-auto pull-right">
         <li class="nav-item active">
@@ -70,17 +86,39 @@
       <!-- Links -->
     </div>
     <!-- Collapsible content -->
-  
+    
   </nav>
 </div>
-  <!--/.Navbar-->
+<!--/.Navbar-->
 </div>
-<div class="intro">
-      
+<div class="intro rgba-gradient card ">
+  <div class="logo container">
+     
+    <h1><strong><b>HealthDome</b></strong></h1>
+    <p>Efficient , affordable and Reliable Hospital Network </p>
   </div>
 </div>
-<div class="components row">
-  <div class="col-md-3">
+</div>
+
+<!--Section: Best Features-->
+<section id="About" class="text-center">
+  
+  <!-- Heading -->
+  <h2 class="mb-5 font-weight-bold">About</h2>
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center mb-4">
+    <!--Grid column-->
+    
+    <div class="col-md-8">
+      
+      <!-- Description -->
+      <p class="">This  setup gives full access to essential  components needed for an interactive and efficient hospital network configurations. </p>
+      
+    </div>
+    
+    <div class="components row">
+      <div class="col-md-3">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/wiki.jpg" alt="Card image cap">
             <div class="card-body">
@@ -89,7 +127,7 @@
               <a href="#" class="btn btn-success">Wiki</a>
             </div>
           </div>
-    </div>
+        </div>
     <div class="col-md-3">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/blogging.jpeg" alt="Card image cap">
@@ -99,19 +137,19 @@
               <a href="#" class="btn btn-primary">Ghost</a>
             </div>
           </div>
-    </div>
+        </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/sharing.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Document Sharing</h5>
-              <p class="card-text">send and recieve Files from anyone on the network.</p>
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="img/sharing.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Document Sharing</h5>
+            <p class="card-text">send and recieve Files from anyone on the network.</p>
               <a href="#" class="btn btn-primary">Next Cloud</a>
             </div>
           </div>
-    </div>
+        </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/vault.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Vault</h5>
@@ -119,25 +157,25 @@
               <a href="#" class="btn btn-danger">PassMann</a>
             </div>
           </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/med.jpeg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Hospital Management Information System</h5>
-              <p class="card-text">Provide access to Hospital Management platform for daily hospital operations.</p>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/med.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Management Information System</h5>
+                <p class="card-text">Provide access to Hospital Management platform for daily hospital operations.</p>
               <a href="#" class="btn btn-success">Hospital Run</a>
             </div>
           </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="img/support.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Support</h5>
-            <p class="card-text">send and recieve Files from anyone on the network.</p>
-            <a href="#" class="btn btn-warning">MetaBase</a>
-          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/support.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Support</h5>
+                <p class="card-text">send and recieve Files from anyone on the network.</p>
+                <a href="#" class="btn btn-warning">MetaBase</a>
+              </div>
         </div>
       </div>
       <div class="col-md-3">
@@ -151,19 +189,20 @@
           </div>
         </div>
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/visualization.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Network Visualization</h5>
-                  <p class="card-text">Allows monitoring of the whole network and chek on state of the containers.</p>
-                  <a href="#" class="btn btn-danger">Go somewhere</a>
-                </div>
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/visualization.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Network Visualization</h5>
+                <p class="card-text">Allows monitoring of the whole network and chek on state of the containers.</p>
+                <a href="#" class="btn btn-danger">Go somewhere</a>
               </div>
+            </div>
+          </div>
         </div>
-</div>
-</body>
+      </div>
+      </body>
   <!-- End your project here-->
-
+  
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -174,6 +213,6 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-
+  
 </body>
 </html>
