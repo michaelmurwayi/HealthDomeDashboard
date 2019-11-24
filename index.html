@@ -17,16 +17,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  .navbar{
+    opacity: 0.9;
+    background-color: white;
+    /* border: medium solid transparent;  */
+  }
   .a{
     background-color: black;
   }
   .intro{
     
-    height: 600px;
-    background-image: url("img/med.jpeg");
+    height: 500px;
+    background-image: url("img/header.jpeg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    position: relative;
     right: 0;
   }
   .logo{
@@ -34,16 +44,17 @@
     color: blanchedalmond;
   }
 .about{
-  margin: 50px;
+  margin: 100px;
 }
   .components{
     margin: 100px;
   }
   .rgba-gradient {
-  background: -moz-linear-gradient(45deg,black,white 100%);
-  background: -webkit-linear-gradient(45deg,black,white 100%);
-  background: linear-gradient(to 45deg,black,white 100%);
+  background: -moz-linear-gradient(85deg,black,white 100%);
+  background: -webkit-linear-gradient(85deg,black,white 100%);
+  background: linear-gradient(top,black,white 100%);
 }
+
 
 </style>
 <body>
@@ -55,7 +66,7 @@
   <!-- Navbar -->
   <div class="header">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light rgba-gradient2  fixed-top">
       
       <!-- Navbar brand -->
       <a class="navbar-brand" href="#"><b>HealthDome</b></a>
@@ -67,7 +78,7 @@
     </button>
     
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse">
+    <div class="">
       
       <!-- Links -->
       <ul class="navbar-nav mr-auto pull-right">
@@ -77,10 +88,10 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#components">Components</a>
         </li>
       </ul>
       <!-- Links -->
@@ -92,7 +103,7 @@
 <!--/.Navbar-->
 </div>
 <div class="intro rgba-gradient card ">
-  <div class="logo container">
+  <div class="logo">
      
     <h1><strong><b>HealthDome</b></strong></h1>
     <p>Efficient , affordable and Reliable Hospital Network </p>
@@ -101,7 +112,7 @@
 </div>
 
 <!--Section: Best Features-->
-<section id="About" class="texwiki.healthdome.intrat-center">
+<section id="about" class="text-center">
   
   <!-- Heading -->
   <h2 class="mb-5 font-weight-bold">About</h2>
@@ -113,11 +124,22 @@
     <div class="col-md-8">
       
       <!-- Description -->
-      <p class="">This  setup gives full access to essential  components needed for an interactive and efficient hospital network configurations. </p>
+      <p class="">
+          HealthDome offers the best platform for networking of hospital systems. We provide and manage healthcare system infrastructure through a unification of various Healthcare Information System components within the available IT infrastructure.</p>
       
     </div>
     
-    <div class="components row">
+    <div class="components row" id="components">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/med.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Hospital Management Information System</h5>
+              <p class="card-text">Provide access to Hospital Management platform for daily hospital operations.</p>
+              <a href="http://his.healthdome.intra" class="btn btn-success">Hospital Run</a>
+            </div>
+          </div>
+        </div>
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/wiki.jpg" alt="Card image cap">
@@ -148,36 +170,16 @@
             </div>
           </div>
         </div>
-    <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/vault.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Vault</h5>
-              <p class="card-text"> Manage and Secure all login credentials to ensure a safe and secure network.</p>
-              <a href="http://vault.healthdome.intra" class="btn btn-danger">PassMann</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="img/med.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Hospital Management Information System</h5>
-                <p class="card-text">Provide access to Hospital Management platform for daily hospital operations.</p>
-              <a href="http://his.healthdome.intra" class="btn btn-success">Hospital Run</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="img/support.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Support</h5>
-                <p class="card-text">send and recieve Files from anyone on the network.</p>
-                <a href="https://support.healthdome.intra" class="btn btn-warning">MetaBase</a>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/support.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Support</h5>
+                  <p class="card-text">send and recieve Files from anyone on the network.</p>
+                  <a href="https://support.healthdome.intra" class="btn btn-warning">MetaBase</a>
+                </div>
               </div>
-        </div>
-      </div>
+            </div>
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="img/mail.jpeg" alt="Card image cap">
@@ -188,6 +190,16 @@
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/vault.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Vault</h5>
+                  <p class="card-text"> Manage and Secure all login credentials to ensure a safe and secure network.</p>
+                  <a href="http://vault.healthdome.intra" class="btn btn-danger">PassMann</a>
+                </div>
+              </div>
+            </div>
         <div class="col-md-3">
           <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="img/visualization.jpg" alt="Card image cap">
